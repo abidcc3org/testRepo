@@ -33,7 +33,10 @@ class HomeScreen extends StatelessWidget {
           actions: [
             TextButton(
               onPressed: () async {
-                Navigator.of(context).pop();
+                final status = true;
+                if(status == false){
+                  Navigator.of(context).pop();
+                }
               },
               child: const Text("OK"),
             ),
